@@ -1,28 +1,5 @@
-
-
-
-
-
-
-
 $(function () {
     new WOW().init();
-
-    $(document).ready(function(){
-
-
-
-        let headerBox = new TimelineMax();
-
-        new ScrollMagic.Scene({
-            // duration: 100,
-            triggerElement: $('header')[0], 
-            offset: wh*0.6
-        })
-        .setTween(headerBox)
-
-
-
 
 
         $('.img__search',).click(function(event){
@@ -44,9 +21,6 @@ $(function () {
         });
 
     });
-
-
-
     $('.footer__item-title').on('click', function () {
 
         $('.footer__item-list').removeClass('footer__item-list-activ');
